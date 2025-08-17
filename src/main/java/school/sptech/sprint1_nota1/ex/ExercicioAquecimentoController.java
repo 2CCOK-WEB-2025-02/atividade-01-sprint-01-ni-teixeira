@@ -10,11 +10,8 @@ public class ExercicioAquecimentoController {
     @GetMapping("/ex-00/{numero}")
     public Boolean exercicioAquecimento(@PathVariable int numero) {
 
-        if(numero % 2 == 0){
-            return true;
-        }
+        return numero % 2 == 0;
 
-        return false;
     }
 
 }
